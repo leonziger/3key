@@ -17,7 +17,7 @@
   @media(max-width: 575px) {
     min-height: unset;
     height: auto;
-    padding: 60px 0 65px;
+    padding: 110px 0 65px;
   }
 
   &__container {
@@ -134,6 +134,10 @@
       bottom: -34px;
 
       .social-media {
+
+        &__copy {
+          display: none;
+        }
 
         .icon__facebook {
           margin: 0 12px;

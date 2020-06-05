@@ -4,8 +4,9 @@
   line-height: 1.21;
 
   & > ul {
-    display: flex;
     width: 580px;
+    display: flex;
+    justify-content: space-between;
 
     & > li {
 

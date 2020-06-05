@@ -233,6 +233,8 @@
       }
 
       &__copy {
+        display: none;
+
         @media(max-width: 575px) {
           display: block;
           font-weight: 400;

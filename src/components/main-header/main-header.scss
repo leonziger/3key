@@ -13,7 +13,7 @@
   @media(max-width: 575px) {
     height: 50px;
     min-height: unset;
-    //position: fixed;
+    position: fixed;
     z-index: 200;
     background: #000;
     width: 100%;
@@ -187,6 +187,7 @@
         margin-left: 0;
         margin-right: 0;
         flex-direction: column;
+        justify-content: flex-start;
 
         & > li {
           padding: 0 20px;
