@@ -1,0 +1,27 @@
+#nav {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.21;
+
+  & > ul {
+    display: flex;
+    width: 580px;
+
+    & > li {
+
+      & > a {
+        color: #fff;
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 18px 0;
+        border-bottom: 1px solid transparent;
+        transition: $delay;
+
+        &:hover {
+          border-bottom: 1px solid #fff;
+        }
+      }
+    }
+  }
+
+}

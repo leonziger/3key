@@ -1,0 +1,41 @@
+.social-media {
+  display: flex;
+
+  &__link {
+    padding: 5px;
+    color: transparent;
+    text-decoration: none;
+
+    svg {
+      fill: black;
+
+      @media(max-width: 1199px) {
+        fill: #fff;
+      }
+    }
+
+    &:hover {
+      svg {
+        fill: $green;
+      }
+    }
+  }
+
+  &__icon {
+    width: 19px;
+    height: 19px;
+  }
+
+  .icon {
+
+    &__facebook {
+      width: 9px;
+      margin: 0 24px;
+    }
+
+    &__vkontakte {
+      width: 34px;
+      height: 19px;
+    }
+  }
+}

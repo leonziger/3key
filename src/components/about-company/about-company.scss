@@ -1,0 +1,228 @@
+.about-company {
+  padding: 118px 0;
+  height: 1087px;
+  background-image: url(../images/our-methods_bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media(max-width: 1399px) {
+    height: auto;
+  }
+
+  @media(max-width: 991px) {
+    background: none;
+    padding: 98px 0 88px;
+  }
+
+  @media(max-width: 575px) {
+    padding: 75px 0;
+  }
+
+  &__container {
+    @media(max-width: 991px) {
+      max-width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    @media(max-width: 799px) {
+      padding-right: 0;
+    }
+
+    @media(max-width: 719px) {
+      padding-right: 15px;
+      max-width: 540px;
+      flex-direction: column;
+    }
+  }
+
+  &__left,
+  &__right {
+    @media(max-width: 991px) {
+      width: 50%;
+    }
+
+    @media(max-width: 719px) {
+      width: 100%;
+    }
+  }
+
+  &__right {
+    text-align: right;
+    padding-top: 65px;
+
+    @media(max-width: 799px) {
+      padding-top: 70px;
+      text-align: left;
+      padding-left: 25px;
+      padding-right: 0;
+    }
+
+    @media(max-width: 719px) {
+      padding: 30px 10px;
+      margin: 0 auto;
+    }
+  }
+
+  &__image {
+
+    &-desktop {
+      @media(max-width: 799px) {
+        display: none;
+      }
+    }
+
+    &-ipad {
+      display: none;
+
+      @media(max-width: 799px) {
+        display: block;
+      }
+      @media(max-width: 719px) {
+        display: none;
+      }
+    }
+
+    &-phone {
+      display: none;
+      @media(max-width: 719px) {
+        display: block;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  &__title {
+    margin-bottom: 49px;
+
+    &-mobile {
+      color: #1D1D1D;
+      display: none;
+
+      @media(max-width: 991px) {
+        display: block;
+        margin-bottom: 40px;
+      }
+      @media(max-width: 575px) {
+        margin-bottom: 30px;
+      }
+    }
+    &-desktop {
+      color: #fff;
+      display: block;
+
+      @media(max-width: 991px) {
+        display: none;
+      }
+    }
+  }
+
+  &__description {
+    color: #fff;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    max-width: 535px;
+    margin-left: 3px;
+    margin-bottom: 79px;
+
+    @media(max-width: 991px) {
+      color: #3F3F3F;
+      font-size: 16px;
+      max-width: 380px;
+      margin-bottom: 31px;
+      letter-spacing: -0.5px;
+      margin-left: 0;
+    }
+
+    @media(max-width: 719px) {
+      max-width: 100%;
+    }
+
+    @media(max-width: 719px) {
+      margin-bottom: 29px;
+    }
+  }
+
+  &__items {
+    counter-reset: myCounter;
+    margin-left: 3px;
+
+    @media(max-width: 991px) {
+      margin-left: 0;
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 49px;
+
+    @media(max-width: 991px) {
+      margin-bottom: 47px;
+    }
+
+    &:before {
+      content: counter(myCounter);
+      counter-increment: myCounter;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: 700;
+      font-size: 52px;
+      line-height: 1.2;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      border: 3px solid $green;
+
+      @media(max-width: 991px) {
+        color: #1D1D1D;
+        width: 82px;
+        height: 82px;
+      }
+    }
+
+    &:after {
+      content: '';
+      width: 156px;
+      height: 3px;
+      background: $green;
+      position: absolute;
+      left: 40px;
+      bottom: 0;
+
+      @media(max-width: 991px) {
+        width: 56px;
+        left: 94px;
+      }
+    }
+
+    &-text {
+      color: white;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1.7;
+      max-width: 230px;
+      text-transform: uppercase;
+      padding-top: 18px;
+      padding-left: 13px;
+
+      @media(max-width: 991px) {
+        color: #1D1D1D;
+        font-size: 14px;
+        padding-top: 17px;
+        padding-left: 11px;
+      }
+    }
+  }
+
+}
+
+.item-second {
+  .about-company__item-text {
+    max-width: 280px;
+  }
+}

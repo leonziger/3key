@@ -1,0 +1,9 @@
+.header-banner {
+  background-image: none;
+
+  @media(max-width: 1199px) {
+    background-image: url(../images/header-banner_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}

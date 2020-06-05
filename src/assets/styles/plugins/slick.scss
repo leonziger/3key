@@ -1,0 +1,38 @@
+@import '../../../../node_modules/slick-carousel/slick/slick.scss';
+@import '../../../../node_modules/slick-carousel/slick/slick-theme.scss';
+
+
+.slick-dots {
+  width: auto;
+}
+
+.slick-vertical .slick-slide {
+  border: 0;
+}
+
+
+/* -------- Start: Standard font and loader redefined ---------  */
+.slick-prev,
+.slick-next {
+  &:before {
+    font-family: 'Open Sans', sans-serif;
+  }
+}
+
+.slick-dots {
+  li {
+    button {
+      &:before {
+        font-family: 'Open Sans', sans-serif;
+      }
+    }
+  }
+}
+
+.slick-list {
+  .slick-loading & {
+    background: #fff slick-image-url("./../images/ajax-loader.gif") center center no-repeat;
+  }
+}
+
+/* -------- End: Standard font and loader redefined ---------  */
