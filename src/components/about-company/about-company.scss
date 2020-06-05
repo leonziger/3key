@@ -15,7 +15,7 @@
   }
 
   @media(max-width: 575px) {
-    padding: 75px 0;
+    padding: 75px 0 78px;
   }
 
   &__container {
@@ -149,7 +149,7 @@
     margin-left: 3px;
 
     @media(max-width: 991px) {
-      margin-left: 0;
+      margin-left: -4px;
     }
   }
 
@@ -216,6 +216,24 @@
         padding-top: 17px;
         padding-left: 11px;
       }
+
+      @media(max-width: 575px) {
+        padding-top: 0;
+        align-self: flex-end;
+        margin-bottom: 9px;
+      }
+    }
+  }
+
+  &__submit {
+    &-wrap {
+      display: none;
+
+      @media(max-width: 575px) {
+        display: block;
+        text-align: center;
+        padding: 11px 0 66px;
+      }
     }
   }
 
@@ -224,5 +242,15 @@
 .item-second {
   .about-company__item-text {
     max-width: 280px;
+  }
+}
+
+@media(max-width: 499px) {
+  .item-first,
+  .item-second,
+  .item-third {
+    .about-company__item-text {
+      max-width: 210px;
+    }
   }
 }

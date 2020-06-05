@@ -15,6 +15,12 @@
     @media(max-width: 991px) {
       max-width: 100%;
     }
+
+    @media(max-width: 575px) {
+      flex-direction: column;
+      padding-left: 12px;
+      padding-right: 12px;
+    }
   }
 
   &__logo {
@@ -31,6 +37,10 @@
 
       @media(max-width: 1199px) {
         display: block;
+      }
+
+      @media(max-width: 575px) {
+        margin-bottom: 21px;
       }
     }
   }
@@ -111,6 +121,11 @@
       margin-left: 21px;
     }
 
+    @media(max-width: 575px) {
+      margin-left: 0;
+      margin-bottom: 17px;
+    }
+
     &-link {
       display: block;
       text-decoration: none;
@@ -150,6 +165,10 @@
       margin-left: 10px;
     }
 
+    @media(max-width: 575px) {
+      margin-left: 0;
+    }
+
     &-phone {
       display: block;
       text-decoration: none;
@@ -161,6 +180,10 @@
 
       @media(max-width: 991px) {
         margin-bottom: 13px;
+      }
+
+      @media(max-width: 575px) {
+        margin-bottom: 9px;
       }
     }
 
@@ -176,6 +199,10 @@
         margin-bottom: 9px;
       }
 
+      @media(max-width: 575px) {
+        margin-bottom: 30px;
+      }
+
       &:hover {
         text-decoration: underline;
       }
@@ -183,6 +210,7 @@
 
     .social-media {
       margin-left: -29px;
+      margin-bottom: 6px;
 
       &__link {
 
@@ -202,6 +230,16 @@
 
       &__vkontakte {
         order: 2;
+      }
+
+      &__copy {
+        @media(max-width: 575px) {
+          display: block;
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 1.33;
+          color: #fff;
+        }
       }
     }
   }
@@ -243,6 +281,10 @@
     &_five {
       order: 5;
       margin-top: 18px !important;
+
+      @media(max-width: 575px) {
+        display: none !important;
+      }
     }
   }
 }
