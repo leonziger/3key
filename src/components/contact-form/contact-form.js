@@ -72,8 +72,6 @@ const validator = cbForm.validate({
     }, {});
 
 
-    // $.post('http://zychkov.su//wp-content/themes/folio/folio/mail.php', cbData).done(function(response) {
-    //   console.log(response);
       openThanksModal();
       cbForm.trigger('reset');
     // });
