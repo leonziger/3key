@@ -123,6 +123,12 @@
     left: -150px;
     bottom: -125px;
 
+    .social-media {
+      &__copy {
+        display: none;
+      }
+    }
+
     @media(max-width: 1539px) {
       position: static;
     }
@@ -134,10 +140,6 @@
       bottom: -34px;
 
       .social-media {
-
-        &__copy {
-          display: none;
-        }
 
         .icon__facebook {
           margin: 0 12px;
